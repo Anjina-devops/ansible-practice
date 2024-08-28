@@ -1,4 +1,3 @@
-...
 # Playbook is list of plays, always it should start with -
 - name: ping the node
   hosts: All
