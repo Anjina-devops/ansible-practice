@@ -1,0 +1,12 @@
+- name: This is for variables example playbook
+  hosts: web
+  vars:
+   COURSE: DEVOPS WITH AWS
+   TRAINER: ANJINA REDDY
+   DURATION: 200 HOURS
+  - name: print the hello message
+     ansible.builtin.debug:
+      msg: "Hello i am learning DevOps with aws course"
+  - name: print course details
+     ansible.builtin.debug:
+      msg: "I am Learing {{COURSSE}}, with the trainee {{TRAINER}} and duration is {{DURATION}}    
