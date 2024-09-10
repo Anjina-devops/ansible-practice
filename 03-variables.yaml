@@ -10,4 +10,4 @@
       msg: "Hello i am learning DevOps with aws course"
   - name: print course details
     ansible.builtin.debug:
-      msg: "I am Learing {{COURSSE}}, with the trainee {{TRAINER}} and duration is {{DURATION}}    
+      msg: "I am Learing {{COURSSE}}, with the trainee {{TRAINER}} and duration is {{DURATION}}  "  
