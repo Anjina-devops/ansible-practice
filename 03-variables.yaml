@@ -4,6 +4,7 @@
    COURSE: DEVOPS WITH AWS
    TRAINER: ANJINA REDDY
    DURATION: 200 HOURS
+  tasks: 
   - name: print the hello message
      ansible.builtin.debug:
       msg: "Hello i am learning DevOps with aws course"
