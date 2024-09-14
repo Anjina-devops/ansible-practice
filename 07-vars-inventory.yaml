@@ -1,5 +1,5 @@
 - name: variables from the inventory file
-  hosts: localhost
+  hosts: web
   become: yes
   tasks:
   - name: print web user name from the invetory file
