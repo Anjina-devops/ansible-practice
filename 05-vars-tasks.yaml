@@ -1,5 +1,5 @@
 - name: this is for variavlbes examles firom the tasks
-  hosts: loclhosts
+  hosts: localhosts
   vars:
   - money: "1000.00 RS"
     land: "2 hectors"
