@@ -1,5 +1,6 @@
 - name: variables from the inventory file
   hosts: web
+  become: yes
   tasks:
   - name: print web user name from the invetory file
     ansible.builtin.debug:
