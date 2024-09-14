@@ -1,0 +1,15 @@
+- name: this is for variavlbes examles firom the tasks
+  hosts: loclhosts
+  vars:
+  - money: "1000.00 RS"
+    land: "2 hectors"
+  tasks:
+  - name: inherit values from the play
+    ansible.builtin.debug:
+     msg: "Money : {{money}} and Land: {{land}}"
+  - name: inherit values from play and override 
+    vars:
+    - money: "2222.20 RS"
+      land: "4 Hectors"
+    ansible.builtin.debug:
+     msg: "money : {{money}} and land : {{land}}"  
