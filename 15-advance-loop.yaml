@@ -10,3 +10,13 @@
     - {name: 'postfix', state: 'installed'}
     - {name: 'mailx', state: 'installed'}
     - {name: 'cyrus-sasl-plain', state: 'absent'} 
+  - name: Make sure 'nginx' is started
+    systemd:
+     name: nginx
+     state: started
+     enabled: yes
+    register: result
+
+  - name: Show result
+    debug:
+    msg: "{{ result }}"
