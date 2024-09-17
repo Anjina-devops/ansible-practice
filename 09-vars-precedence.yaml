@@ -11,9 +11,9 @@
   tasks:
   - name: variable at task level
   vars:
-  - NAME: "hello"
-     ansible.builtin.debug:
-      msg: "Trainer name is: {{NAME}}"
+   NAME: "hello"
+    ansible.builtin.debug:
+     msg: "Trainer name is: {{NAME}}"
 
 # 1. command line variables
 # 2. task level
