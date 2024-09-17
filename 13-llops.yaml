@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: print the names
-    ansible.builtn.debug:
+    ansible.builtin.debug:
      msg: "names are :{{item}}"
 
     loop:
