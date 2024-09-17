@@ -18,5 +18,5 @@
     register: result
 
   - name: Show result
-    debug:
-    msg: "{{ result }}"
+    ansible.builtin.debug:
+     msg: "{{ result }}"
