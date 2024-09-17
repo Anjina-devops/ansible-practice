@@ -9,9 +9,7 @@
   #   prompt: Please enter Trainer Name
   #   private: false
   tasks:
-  - name: variable at task level
-  vars:
-   NAME: "hello"
+  - name: variable at PLAY level
     ansible.builtin.debug:
      msg: "Trainer name is: {{NAME}}"
 
