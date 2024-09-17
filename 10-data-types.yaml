@@ -1,0 +1,30 @@
+- name: this is for all datatypes check
+  hosts: localhost
+  vars:
+  - name: Ammanni # this is string
+  - age: 10 # this is a number
+  - isGoodPerson: true # Boolean
+  - skills: # this is list 
+    - talking
+    - maintanining
+    - earning
+  - experience: #this is map
+    - talking: Telugu
+    - maintaining: family
+    - earning: agriculture
+  tasks:
+  - name: print string
+    ansible.builtin.debug:
+     msg: "{{name}}"  
+  - name: print number
+    ansible.builtin.debug:
+     msg: "{{age}}"
+  - name: print boolean
+    ansible.builtin.debug:
+     msg: "{{isGoodPerson}}"
+  - name: print lsit variables
+    ansible.builtin.debug:
+     msg: "{{skills}}"        
+  - name: print map
+    ansible.builtin.debug:
+     msg: "{{experience}}"  
