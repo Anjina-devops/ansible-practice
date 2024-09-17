@@ -12,7 +12,7 @@
   - name: variable at task level
   vars:
    - NAME: "REDDY"
-    ansible.builtin.debug:
+     ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
 
 # 1. command line variables
